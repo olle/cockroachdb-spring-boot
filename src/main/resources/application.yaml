@@ -2,5 +2,10 @@ spring:
   datasource:
     url: jdbc:postgresql://localhost:26257/test?sslmode=disable
     username: root
+    driver-class-name: org.postgresql.Driver
 server:
   port: 9090
+management:
+   endpoint:
+      health:
+        show-details: "ALWAYS"
