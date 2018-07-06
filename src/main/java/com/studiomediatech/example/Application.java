@@ -1,12 +1,12 @@
-package com.studiomediatech.example.cockroachdbspringboot;
+package com.studiomediatech.example;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class CockroachdbSpringBootApplication {
+public class Application {
 
 	public static void main(String[] args) {
-		SpringApplication.run(CockroachdbSpringBootApplication.class, args);
+		SpringApplication.run(Application.class, args);
 	}
 }

@@ -1,0 +1,6 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:26257/test?sslmode=disable
+    username: root
+server:
+  port: 9090
