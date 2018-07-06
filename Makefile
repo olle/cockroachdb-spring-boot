@@ -2,7 +2,7 @@
 
 run:
 	docker-compose up -d
-	sleep 3
+	sleep 6
 	mvn clean spring-boot:run
 
 clean:
