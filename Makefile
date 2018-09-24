@@ -1,6 +1,6 @@
 .PHONY: run
 
-run:
+run: clean
 	docker-compose up -d
 	sleep 6
 	mvn clean spring-boot:run
