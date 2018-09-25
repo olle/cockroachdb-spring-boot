@@ -1,4 +1,4 @@
-package com.studiomediatech.example;
+package com.studiomediatech.example.domain;
 
 public class Stuff {
 
