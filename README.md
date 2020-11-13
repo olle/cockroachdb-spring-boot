@@ -1,22 +1,18 @@
 CockroachDB - Spring Boot
 =========================
 
-A small project for trying out app-development with Spring Boot and CockroachDB,
-as DB.
+An example project, for trying out and presenting an example-setup of Spring
+Boot and CockroachDB.
 
 Getting started
 ---------------
 
-Simply run `make`. Requires Docker as it is now. The CockroachDB UI will be on
-`http://localhost:8080` and the Spring Boot app on `http://localhost:9090`.
+A local three node CockroachDB cluster can be started using Docker. The script
+`start.sh` will ensure that the cluster is booted up, initialized and that a
+database `test` is created.
 
+The Spring Boot application can be started using the Maven wrapper. Running
+`./mvnw spring-boot:run` will compile and run the app. The application is
+then available at `http://localhost:8080`.
 
-Notes and lessons learned
--------------------------
-
-* Tried to manage schema with Liquibase, did not quite work out. Open issue
-  for missing capabilities - which is ok. Leaving this here.
-
-  https://github.com/cockroachdb/cockroach/issues/26737
-
-
+To shut down and remove the CockroachDB cluster, run the `stop.sh` script.

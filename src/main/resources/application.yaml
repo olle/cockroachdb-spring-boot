@@ -5,7 +5,7 @@ spring:
     driver-class-name: org.postgresql.Driver
     initialization-mode: always
 server:
-  port: 9090
+  port: 8080
 management:
    endpoint:
       health:
