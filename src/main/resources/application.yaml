@@ -1,12 +1,22 @@
-spring:
-  datasource:
-    url: jdbc:postgresql://localhost:26257/test?sslmode=disable
-    username: root
-    driver-class-name: org.postgresql.Driver
-    initialization-mode: always
 server:
   port: 8080
 management:
    endpoint:
       health:
         show-details: "ALWAYS"
+app:
+  datasource:
+    cluster:
+      url: jdbc:postgresql://localhost:26257/test?sslmode=disable
+      driver-class-name: org.postgresql.Driver
+      username: root
+      initialization-mode: always
+      configuration:
+        maximum-pool-size: 11
+    archive:
+      url: jdbc:postgresql://localhost:5432/test
+      driver-class-name: org.postgresql.Driver
+      username: sa
+      password: root
+      configuration:
+        maximum-pool-size: 5
