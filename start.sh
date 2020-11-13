@@ -2,7 +2,6 @@
 
 source .env
 
-
 docker network create -d bridge ${NETWORK}
 
 IMAGE=cockroachdb/cockroach:v20.2.0
