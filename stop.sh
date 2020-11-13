@@ -2,7 +2,7 @@
 
 source .env
 
-docker stop roach1 roach2 roach3
-docker rm roach1 roach2 roach3
+docker stop roach1 roach2 roach3 postgresql
+docker rm roach1 roach2 roach3 postgresql
 docker network rm ${NETWORK}
 rm -rf ./${DATA}
