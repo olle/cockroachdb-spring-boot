@@ -1,0 +1,5 @@
+CREATE TABLE IF NOT EXISTS junk (
+  id BIGINT PRIMARY KEY,
+  stuff_id VARCHAR(64) NOT NULL
+);
+
